@@ -9,5 +9,5 @@ O controle das taregas desse projeto será realizado no GitHub
 
 :package: Nova funcionalidade
 :up: Atualização
-:beatle: Correção de bug
+:white_check_mark: Correção de bug
 :checkered_flag: Release
