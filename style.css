@@ -13,6 +13,11 @@
     --font-secundary: "Josefin Slab", serif;
     --font-action: "Muli", serif;
 }
+
+html{
+    scroll-behavior: smooth;
+}
+
 .hamburguer{
    /* background-color: red; */
     width: 2rem;
@@ -25,6 +30,7 @@
     flex-direction: column;
     justify-content: space-evenly;
     cursor: pointer;
+    z-index: 180;
 
 }
 
@@ -190,7 +196,7 @@ header{
     top: 0;
     right: -20rem;
     transition: all 1s;
-
+    z-index: 150;
 }
 
 .show-menu .sidebar {
@@ -247,16 +253,12 @@ header{
     background-color: rgb(128, 125, 125);
 }   
 
-.sessao-header{
-    text-align: center;
-    margin-top: 2rem;
-    margin-bottom: 3rem;
-}
 .conhecimentos{
     display: grid;
     grid-template-columns: repeat(16, 1fr);
     grid-template-rows: repeat(6, 4rem); 
     row-gap: .5rem;
+    height: 49rem;
 }
 
 .conhecimento:nth-child(1){
@@ -293,28 +295,30 @@ header{
 
 .sessao-conhecimentos{
     background-color: rgb(252, 249, 249);
-    margin-top: -2rem;   
+    width: 100%;
+    height: 130%;   
 }
 
 .sessao-header{
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: center;    
 }
 
 .sessao-header h1{
     font-family: var(--font-primary);
     font-size: 3rem;
-    color:#4b4b4b;
-    border-bottom: solid 3px #c4b989;
-    margin-top: 2rem;
-    margin-bottom: 1rem;
+    color:#3f3c3c;
+    border-bottom: solid 3px #9e9a84;
+    margin-top: 2rem;  
+    margin-bottom: 6rem;
 }
+
 
 .conhecimento-header{
     display:inline;
     align-items:center;
-    color: #4b4b4b;
+    color: #4b4b4b;   
 }
 
 .conhecimento-header i{
@@ -335,15 +339,29 @@ header{
 .projetos{
     display: flex;
     justify-content: space-evenly;
+    background-color: #fff
+    margin: auto;
+    height: 30rem; 
 }
+
+.projeto h1{
+    font-family: var(--font-primary);
+    font-size: 3rem;
+    align-items: center;
+    color:#4b4b4b;
+    border-bottom: solid 3px #9e9a84; 
+    margin: auto;     
+}
+
 .card{
     width: 18rem;
     height: 25rem;
     position: relative;
+    margin: auto;
 }
 
 .card-img-wrapper{
-    width: 100%;
+    width: 120%;
     height: 100%;
     background-color: #262626;
     border-radius: .5rem;
@@ -381,7 +399,7 @@ header{
 .card-info h3{
     font-family: var(--font-action);
     font-weight: bolder;
-    color: #c4b989;
+    color: #9e9a84;
     margin-bottom: 2rem;
 }
 
@@ -419,11 +437,13 @@ header{
 
 .sessao-contato{
     width: 100%;
-    height: 100vh;
-    background-color: #ffffff;
+    height: 110vh;
+    background-color: rgb(252, 249, 249);
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-top: 20rem;
+    
 }
 
 .contato-wrapper{
@@ -431,6 +451,7 @@ header{
     height: 35rem;
     display: flex;
     box-shadow: 0 2rem 3rem rgba(0, 0, 0, .5);
+    margin-top: -10rem;
 }
 
 .contato-left{
@@ -452,6 +473,7 @@ header{
     color: #272727;
     font-size: 2.5rem;
     font-weight: lighter;
+    margin-top: 3rem;
 }
 
 .sessao-contato form{
@@ -517,8 +539,8 @@ header{
 .sessao-orcamento{
     width: 100%;
     height: 100vh;
-    background: url("./Imagens/i42.jpg");
-    object-fit: cover;
+    background: url("./Imagens/nordwood-themes-EZSm8xRjnX0-unsplash.jpg");
+    background-size: cover;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -531,6 +553,7 @@ header{
     border-radius: 10px;
     box-shadow: 0 0.1rem 0.3rem rgba(0, 0, 0, .5);  
     position:relative;
+    margin-top: 4rem;
 }
 
 .sessao-orcamento h1{
@@ -579,4 +602,53 @@ header{
     padding: 1rem;
     cursor: pointer;
     grid-column: 2;
+}
+
+footer{
+    width: 100%;
+    height: 7rem;
+    background-color: #a1a09b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-content{
+    width: 60%;
+    display: flex;
+    justify-content: space-between;    
+}
+
+.footer-content p{
+    font-family: var(--font-secundary);
+    color:#000000;
+    font-size: 1.2rem;
+}
+
+.social-list a{
+    margin: 0 2rem;
+    color: #000000;
+    font-size: 1rem;
+}
+
+.social-list ul{
+    display: flex;
+}
+
+#link-topo{
+    position:fixed;
+    right: 3rem;
+    bottom: 3rem;
+    width: 3rem;
+    height: 3rem;
+    background: #206460;  
+    background: -webkit-linear-gradient(to right, #ffffff, #2c8f88);  
+    background: linear-gradient(to left, #398388, #26706b);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #464679;
+    border-radius: .3rem;    
+    box-shadow: 0 0.1rem 0.4rem #000000;
+    z-index: 200;
 }
