@@ -919,7 +919,7 @@ footer{
     }
 }
 
-@media screen and (max-width: 380px) {
+@media screen and (max-width: 720px) {
 
     .banner h1{
         margin-left: -5rem;
