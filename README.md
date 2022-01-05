@@ -1,10 +1,9 @@
-# Portfólio
-
-Portfólio do desenvolvedor
+# Portfolio
+Aqui está meus primeiros códigos para criação de um portfolio.
 
 ## Tarefas
 
-O controle das taregas desse projeto será realizado no GitHub
+O controle das tarefas desse projeto será realizado no GitHub.
 
 ## ícones
 
