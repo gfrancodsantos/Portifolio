@@ -1,6 +1,6 @@
-# Meus primeiros códigos
+#Minhas primeiras linhas de código.
 
-Aqui está meus primeiros códigos para criação de um portfolio.
+Aqui está meus primeiros códigos para criação de um portfolio tendo como referência vídeos tutorias da internet.
 
 ## Tarefas
 
@@ -8,7 +8,4 @@ O controle das tarefas desse projeto será realizado no GitHub.
 
 ## ícones
 
-:package: Nova funcionalidade
-:up: Atualização
-:white_check_mark: Correção de bug
-:checkered_flag: Release
+
